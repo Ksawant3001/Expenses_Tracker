@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+<div class="container">
+        <h2>Expense Tracker</h2>
+        <div class="error-message">Please Enter Budget  Amount | Budget Input Should Be More Than 0
+        </div>
+
+    <div class="b-content">
+      <div class="your-budget">
+        <form>
+            <label for="budget">Your Budget</label>
+            <input type = "number" placeholder="Enter Your Budget" class="budget_input">
+            <button id="btn_budget" class="btn">Calculate</button>
+        </form>
+     </div>
+
+     <div class="your-expense">
+        <form>
+            <label for="expenses">Expense Details</label>
+            <input type = "text" placeholder="Enter Your Expense" class="expenses_input">
+            <input type = "number" placeholder="Enter Expense Amount" class="expenses_amount">
+            <button id="btn_expenses" class="btn">Add  Expenses</button>
+        </form>
+     </div>
+    </div>
+
+    <ul class="cards">
+        <li>
+            <i class="bx bx-money"></i>
+            <span class="info">
+                <h3><span>$</span><span class="budget-card">0</span></h3>
+                <p>Budget</p>
+            </span>
+        </li>
+
+        <li>
+            <i class="bx bx-credit-card"></i>
+            <span class="info">
+                <h3><span>$</span><span class="expenses-card">0</span></h3>
+                <p>Expenses</p>
+            </span>
+        </li>
+
+        <li>
+            <i class="bx bx-dollar"></i>
+            <span class="info">
+                <h3><span>$</span><span class="blnc-card">0</span></h3>
+                <p>Balance</p>
+            </span>
+        </li>
+    </ul>
+
+    <div class="table-content">
+        <h3>Budget Details</h3>
+        <div class="table-data">
+            <!-- <div class="tbl-tr-content">
+                <li>1</li>
+                <li>Gaming Mouse</li>
+                <li><span>$</span>600</li>
+                <li>
+                    <button type="button" class="btn-edit">Edit</button>
+                    <button type="button" class="btn-delete">Delete</button>
+                </li>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
